@@ -1,0 +1,8 @@
+version: v1
+plugins:
+  # TypeScript
+  - plugin: buf.build/connectrpc/es:v1.1.3
+    out:  protos/protobufGen
+  # dependencies
+  - plugin: buf.build/bufbuild/es
+    out: protos/protobufGen
